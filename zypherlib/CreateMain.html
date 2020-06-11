@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Zypher UILib</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Zypher UI-Lib </div>
+      <div class="list-group list-group-flush">
+        <a href="../zypherlib.html" class="list-group-item list-group-item-action bg-light">About Zypher UI-Lib</a>
+        <a href="../zypherlib/CreateMain.html" class="list-group-item list-group-item-action bg-light">CreateMain</a>
+        <a href="../zypherlib/CreateCategory.html"
+          class="list-group-item list-group-item-action bg-light">CreateCategory</a>
+        <a href="../zypherlib/CreateSection.html"
+          class="list-group-item list-group-item-action bg-light">CreateSection</a>
+        <a href="../zypherlib/CreateButton.html"
+          class="list-group-item list-group-item-action bg-light">CreateButton</a>
+        <a href="../zypherlib/CreateToggle.html"
+          class="list-group-item list-group-item-action bg-light">CreateToggle</a>
+        <a href="../zypherlib/CreateSlider.html"
+          class="list-group-item list-group-item-action bg-light">CreateSlider</a>
+        <a href="../zypherlib/CreateTextbox.html"
+          class="list-group-item list-group-item-action bg-light">CreateTextBox</a>
+        <a href="../zypherlib/CreateKeyBind.html"
+          class="list-group-item list-group-item-action bg-light">CreateKeyBind</a>
+        <a href="../zypherlib/CreateDropdown.html"
+          class="list-group-item list-group-item-action bg-light">CreateDropdown</a>
+        <a href="../zypherlib/CreateColorpicker.html"
+          class="list-group-item list-group-item-action bg-light">CreateColorpicker</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">CreateMain()</h1>
+        <p><i>CreateMain() is the first method you're going to use for creating a gui with this library.</i></p>
+        <p>You always want to assign the method to a variable. This is so you can re-use it. See Example.</p>
+        <br>
+        <p>Method:</p>
+        <pre class="code-example"><code>CreateMain(<strong>@Name</strong> > Text for ScreenGui): <strong>void</strong></code></pre>
+        <br>
+        <p>Example:</p>
+        <pre class="code-example"><code>local <strong>Zypher</strong> = library:CreateMain("<strong>Zypher</strong>")</strong></code></pre>
+        <br>
+        <br>
+        <p>Method status: <span class="active-method">Active</span></p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
